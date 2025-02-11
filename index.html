@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - AI/ML Enthusiast</title>
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-HHsOCa3kaF8KQ7p7Ew8s3VdV5dG6MjZJfsB2nXUBN/2UV37DkrxZih0Jl48l7rzhLTVl65C/fdL+olh2m/4Plw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- AOS CSS for scroll animations -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-GY4dWc8mbsv7R9s7p8Oodt5rXXLurS8B+6tUShPbbKjYAG+90QJHS2c+oNsYw+O+3CcjJkz0z3Z0Ch6UfrK4mw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="container">
+      <div class="logo">Shreya Venkat</div>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Interactive Particle Background and Typewriter Effect -->
+  <section id="hero">
+    <div id="particles-js"></div>
+    <div class="content" data-aos="fade-up">
+      <h1>Hi, I'm Shreya</h1>
+      <!-- The typed text appears here -->
+      <span id="typed"></span>
+      <br>
+      <button onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' })">
+        About Me
+      </button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="content">
+        <div class="text">
+          <p>
+            Hello! I'm a final-year BTech Engineering student with a passion for artificial intelligence and machine learning.
+            I love innovating and solving problems with technology. My journey in AI/ML has been both challenging and exciting,
+            and I’m always eager to learn new techniques and explore innovative ideas.
+          </p>
+          <p>
+            When I'm not coding, you'll find me collaborating on projects, contributing to open-source, or diving into the latest AI research.
+          </p>
+        </div>
+        <div class="image">
+          <img src="C:\\Users\\venka\\Downloads\\My Portfolio\\Profile_Photo1.jpg" alt="Your Photo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" data-aos="fade-up">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <a class="project" href="https://github.com/Shreya-0309/Product-attribute-prediction" target="_blank">
+          <img src="C:\\Users\\venka\\Downloads\\My Portfolio\\product_attribute_prediction_image.jpg" alt="AI Chatbot">
+          <div class="details">
+            <h3>Product Attribute Predictor</h3>
+            <p>A hybrid ResNet-ViT architecture for automated multi-attribute rrediction in product images.</p>
+          </div>
+        </a>
+        <!-- Project 2 -->
+        <a class="project" href="https://github.com/Shreya-0309/" target="_blank">
+          <img src="C:\\Users\\venka\\Downloads\\My Portfolio\\student_answers_image.jpg" alt="Image Classifier">
+          <div class="details">
+            <h3>Automatic Answer Evaluator</h3>
+            <p>An automatic answer script correcter using advanced ML and NL techniques to correct answers given by the student with respect to the key.</p>
+          </div>
+        </a>
+        <!-- Project 3 -->
+        <a class="project" href="https://github.com/Shreya-0309/ClassPet-Chatbot" target="_blank">
+          <img src="C:\\Users\\venka\\Downloads\\My Portfolio\\student_chatbot_image.jpg" alt="Data Visualization Dashboard">
+          <div class="details">
+            <h3>ClassPET - AI Student Chatbot</h3>
+            <p>An intelligent chatbot that uses NLP to converse with users. Designed for students to enhance learning outcomes by making educational interactions more engaging and enjoyable.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" data-aos="fade-up">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">Python</div>
+        <div class="skill">TensorFlow</div>
+        <div class="skill">PyTorch</div>
+        <div class="skill">NLP</div>
+        <div class="skill">Data Science</div>
+        <div class="skill">C++</div>
+        <div class="skill">C</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">Javascript</div>
+        <div class="skill">ML</div>
+        <div class="skill">Computer Vision</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" data-aos="fade-up">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="education-timeline">
+        <!-- Education Item 1 -->
+        <div class="education-item">
+          <h3>Bachelor of Technology in Computer Science and Engineering</h3>
+          <p>Vellore Institute of Technology</p>
+          <span>2021 - Present</span>
+        </div>
+        <!-- Education Item 2 -->
+        <div class="education-item">
+          <h3>Higher Secondary School</h3>
+          <p>SBOA School and Junior College</p>
+          <span>2019 - 2021</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-aos="fade-up">
+    <div class="container">
+      <h2>Contact Me</h2>
+
+      <form action="https://formspree.io/f/xjvnqnoe" method="post">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input name="Email" id="email" type="email" placeholder="Your Email" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Shreya Venkat. All rights reserved.</p>
+  </footer>
+
+  <!-- External Scripts -->
+  <!-- Particles.js Library -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Typed.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- AOS JS for scroll animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+          integrity="sha512-GY9fB2Y81KztBMBtwxQiz7v/xvWXm6hfzTObom+XyyKM63dZ96BlYwQhsq59V6B0IirnVZBkI2ZCPe6zs2wXGw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+  
+
+</body>
+</html>
