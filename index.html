@@ -4,187 +4,353 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio - Shreya Venkat</title>
+
+  <!-- SEO Meta -->
+  <meta name="description" content="Shreya Venkat — Aspiring AI/ML engineer. Portfolio showcasing projects in computer vision, NLP and machine learning.">
+  <meta name="keywords" content="Shreya Venkat, AI, Machine Learning, NLP, Computer Vision, Portfolio, Data Science">
+  <meta name="author" content="Shreya Venkat">
+
   <!-- Font Awesome for icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    integrity="sha512-HHsOCa3kaF8KQ7p7Ew8s3VdV5dG6MjZJfsB2nXUBN/2UV37DkrxZih0Jl48l7rzhLTVl65C/fdL+olh2m/4Plw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <!-- AOS CSS for scroll animations -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    integrity="sha512-GY4dWc8mbsv7R9s7p8Oodt5rXXLurS8B+6tUShPbbKjYAG+90QJHS2c+oNsYw+O+3CcjJkz0z3Z0Ch6UfrK4mw=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  
+  <!-- Devicon for programming icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- Navigation -->
   <header>
-    <div class="container">
+    <div class="container nav-container">
       <div class="logo">Shreya Venkat</div>
+      <!-- Hamburger Button -->
+      <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span>s</span>
+        <span>s</span>
+        <span>s</span>
+      </button>
       <nav>
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+        <a href="#hero-about" class="nav-link" data-target="hero-about">About Me</a>
+        <a href="#projects" class="nav-link" data-target="projects">Projects</a>
+        <a href="#experience" class="nav-link" data-target="experience">Experience</a>
+        <a href="#skills" class="nav-link" data-target="skills">Skills</a>
+        <a href="#education" class="nav-link" data-target="education">Education</a>
+        <a href="#contact" class="nav-link" data-target="contact">Contact</a>
       </nav>
+
     </div>
   </header>
 
-  <!-- Hero Section with Interactive Particle Background and Typewriter Effect -->
-  <section id="hero">
-    <div id="particles-js"></div>
-    <div class="content" data-aos="fade-up">
-      <h1>Hi, I'm Shreya</h1>
-      <!-- The typed text appears here -->
-      <span id="typed"></span>
-      <br>
-      <button onclick="document.querySelector('#about').scrollIntoView({ behavior: 'smooth' })">
-        About Me
-      </button>
-    </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" data-aos="fade-up">
-    <div class="container">
-      <h2>About Me</h2>
-      <div class="content">
-        <div class="text">
-          <p>
-            Hello! I'm a final-year BTech Engineering student with a passion for artificial intelligence and machine learning.
-            I love innovating and solving problems with technology. My journey in AI/ML has been both challenging and exciting,
-            and I’m always eager to learn new techniques and explore innovative ideas.
-          </p>
-          <p>
-            When I'm not coding, you'll find me collaborating on projects, contributing to open-source, or diving into the latest AI research.
-          </p>
-        </div>
-        <div class="image">
-          <img src="Profile_Photo1.jpg" alt="My Photo">
+  <!-- Hero + About -->
+  <section id="hero-about">
+    <div id="particles-js" aria-hidden="true"></div>
+    <div class="container hero-about-grid" data-aos="fade-up">
+
+      <!-- Left Content -->
+      <div class="hero-text">
+        <h1>Hi, I'm <span class="highlight">Shreya Venkat</span></h1>
+        <h2><span id="typed" aria-live="polite"></span></h2>
+        <p class="intro">
+          A problem-solver at heart with a flair for turning ideas into intelligent systems. I specialize in AI & ML, with hands-on experience in computer vision, NLP, and open-source contributions. Passionate about learning, building, and innovating with every line of code.
+        </p>
+        <div class="hero-ctas">
+          <a class="cta" href="resume.pdf" target="_blank" rel="noopener noreferrer">
+            <i class="fa fa-file-download"></i> View Resume
+          </a>
+          <a class="cta cta-outline" href="https://www.linkedin.com/in/shreya-venkatapathy/" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
         </div>
       </div>
+
+      <!-- Right Image -->
+      <div class="hero-image">
+        <div class="image-frame">
+          <img src="ID Photo.png" alt="Profile photo of Shreya">
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" data-aos="fade-up">
+
+
+  <!-- Projects -->
+  <section id="projects" data-aos="fade-up">\
     <div class="container">
       <h2>Projects</h2>
       <div class="project-grid">
-        <!-- Project 1 -->
-        <a class="project" href="https://github.com/Shreya-0309/Product-attribute-prediction" target="_blank">
-          <img src="product_attribute_prediction_image.jpg" alt="AI Chatbot">
+
+        <div class="project">
+          <img src="product_attribute_prediction_image.jpg" alt="Product Attribute Predictor">
           <div class="details">
             <h3>Product Attribute Predictor</h3>
-            <p>A hybrid ResNet-ViT architecture for automated multi-attribute rrediction in product images.</p>
+            <p>A hybrid ResNet–ViT architecture for automated multi-attribute prediction in product images.</p>
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">PyTorch</span>
+              <span class="badge">Computer Vision</span>
+            </div>
+            <div class="project-ctas">
+              <a href="https://github.com/Shreya-0309/Product-attribute-prediction" target="_blank" class="btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://your-demo-link.com" target="_blank" class="btn demo">
+                <i class="fa fa-external-link-alt"></i> Demo
+              </a>
+            </div>
           </div>
-        </a>
-        <!-- Project 2 -->
-        <a class="project" href="https://github.com/Shreya-0309/" target="_blank">
-          <img src="student_answers_image.jpg" alt="Image Classifier">
+        </div>
+
+        <div class="project">
+          <img src="student_answers_image.jpg" alt="Automatic Answer Evaluator">
           <div class="details">
             <h3>Automatic Answer Evaluator</h3>
-            <p>An automatic answer script correcter using advanced ML and NL techniques to correct answers given by the student with respect to the key.</p>
+            <p>An automatic answer script corrector using advanced ML and NLP techniques.</p>
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">NLP</span>
+              <span class="badge">Scikit-learn</span>
+            </div>
+            <div class="project-ctas">
+              <a href="https://github.com/Shreya-0309/" target="_blank" class="btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://your-demo-link.com" target="_blank" class="btn demo">
+                <i class="fa fa-external-link-alt"></i> Demo
+              </a>
+            </div>
           </div>
-        </a>
-        <!-- Project 3 -->
-        <a class="project" href="https://github.com/Shreya-0309/ClassPet-Chatbot" target="_blank">
-          <img src="student_chatbot_image.jpg" alt="Data Visualization Dashboard">
+        </div>
+
+        <div class="project">
+          <img src="student_chatbot_image.jpg" alt="ClassPET - AI Student Chatbot">
           <div class="details">
             <h3>ClassPET - AI Student Chatbot</h3>
-            <p>An intelligent chatbot that uses NLP to converse with users. Designed for students to enhance learning outcomes by making educational interactions more engaging and enjoyable.
-            </p>
+            <p>An intelligent chatbot that uses NLP to converse with users, designed for students to enhance learning.</p>
+            <div class="badges">
+              <span class="badge">Python</span>
+              <span class="badge">Transformers</span>
+              <span class="badge">NLP</span>
+            </div>
+            <div class="project-ctas">
+              <a href="https://github.com/Shreya-0309/ClassPet-Chatbot" target="_blank" class="btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://your-demo-link.com" target="_blank" class="btn demo">
+                <i class="fa fa-external-link-alt"></i> Demo
+              </a>
+            </div>
           </div>
-        </a>
+        </div>
+
+        <div class="project">
+          <img src="portfolio_website.png" alt="Portfolio Website">
+          <div class="details">
+            <h3>Portfolio Website</h3>
+            <p>Designed and developed my portfolio.</p>
+            <div class="badges">
+              <span class="badge">HTML</span>
+              <span class="badge">CSS</span>
+              <span class="badge">JavaScript</span>
+            </div>
+            <div class="project-ctas">
+              <a href="https://github.com/Shreya-0309/" target="_blank" class="btn github">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://your-demo-link.com" target="_blank" class="btn demo">
+                <i class="fa fa-external-link-alt"></i> Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
+
+  
+  <!-- Experience -->
+  <section id="experience" data-aos="fade-up">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-grid">
+        <a href="https://www.linkedin.com/company/shell/posts/?feedView=all" target="_blank" class="experience-card-link">
+          <div class="experience-card">
+            <img src="Shell-Logo.png" alt="Shell Logo" class="company-logo">
+            <h3>Business Analyst</h3>
+            <p><strong>Shell India</strong></p>
+            <span class="exp-duration">July 2025 – Present<br>(Full Time)</span>
+            <p class="exp-desc">Working on data-driven solutions to optimize business processes, while contributing to analytics projects with cross-functional teams.</p>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/company/microsoft-innovations-club-vitc/?originalSubdomain=in" target="_blank" class="experience-card-link">
+          <div class="experience-card">
+            <img src="microsoft_ic_logo.jpg" alt="MIC Logo" class="company-logo">
+            <h3>AI/ML Team Member</h3>
+            <p><strong>Microsoft Innovations Club</strong></p>
+            <span class="exp-duration">Mar 2023 – Sep 2023<br> (Part Time)</span>
+            <p class="exp-desc">Collaborated on diverse club projects, strengthening research, problem-solving, communication, and project management skills.</p>
+          </div>
+        </a>
+
+        <a href="https://www.linkedin.com/school/cabapl-elite-techno-groups/?originalSubdomain=in" target="_blank" class="experience-card-link">
+          <div class="experience-card">
+            <img src="cabapl_logo.jpg" alt="Capabl Logo" class="company-logo">
+            <h3>Data Science Intern</h3>
+            <p><strong>Capabl</strong></p>
+            <span class="exp-duration">Jun 2023 – Aug 2023<br>(Intern)</span>
+            <p class="exp-desc">Conducted in-depth EDA and integrated time-sensitive & environmental variables to uncover insights and boost predictive accuracy.</p>
+          </div>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Skills -->
   <section id="skills" data-aos="fade-up">
     <div class="container">
       <h2>Skills</h2>
-      <div class="skills-container">
-        <div class="skill">Python</div>
-        <div class="skill">TensorFlow</div>
-        <div class="skill">PyTorch</div>
-        <div class="skill">NLP</div>
-        <div class="skill">Data Science</div>
-        <div class="skill">C++</div>
-        <div class="skill">C</div>
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">Javascript</div>
-        <div class="skill">ML</div>
-        <div class="skill">Computer Vision</div>
+
+      <div class="skills-category">
+        <h3>Programming Languages</h3>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+          <div class="skill-card"><i class="devicon-c-plain colored"></i><span>C</span></div>
+          <div class="skill-card"><i class="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+          <div class="skill-card"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+          <div class="skill-card"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+          <div class="skill-card"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+        </div>
       </div>
+
+      <div class="skills-category">
+        <h3>AI / ML</h3>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="devicon-tensorflow-original colored"></i><span>TensorFlow</span></div>
+          <div class="skill-card"><i class="devicon-pytorch-original colored"></i><span>PyTorch</span></div>
+          <div class="skill-card"><i class="fas fa-robot" style="color:#ff6f61;"></i><span>Machine Learning</span></div>
+          <div class="skill-card"><i class="fas fa-brain" style="color:#8e44ad;"></i><span>Artificial Intelligence</span></div>
+          <div class="skill-card"><i class="fas fa-language" style="color:#16a085;"></i><span>NLP</span></div>
+          <div class="skill-card"><i class="devicon-opencv-plain colored"></i><span>Computer Vision</span></div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Data & Analytics</h3>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="fas fa-database" style="color:#16a085;"></i><span>Data Science</span></div>
+          <div class="skill-card"><i class="devicon-r-original colored"></i><span>R</span></div>
+          <div class="skill-card"><i class="devicon-numpy-original colored"></i><span>NumPy</span></div>
+          <div class="skill-card"><i class="devicon-mysql-plain colored"></i><span>SQL</span></div>
+          <div class="skill-card"><i class="fas fa-chart-pie" style="color:#f2c811;"></i><span>Power BI</span></div>
+        </div>
+      </div>
+
+      <div class="skills-category">
+        <h3>Tools & Cloud</h3>
+        <div class="skills-grid">
+          <div class="skill-card"><i class="devicon-amazonwebservices-plain colored"></i><span>AWS</span></div>
+          <div class="skill-card"><i class="fab fa-github" style="color:#fff;"></i><span>GitHub</span></div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Education Section -->
+
+
+
+
+  <!-- Education -->
   <section id="education" data-aos="fade-up">
     <div class="container">
       <h2>Education</h2>
-      <div class="education-timeline">
-        <!-- Education Item 1 -->
-        <div class="education-item">
-          <h3>Bachelor of Technology in Computer Science and Engineering</h3>
-          <p>Vellore Institute of Technology</p>
-          <span>2021 - Present</span>
-          <p> CGPA: 9.15</p>
-        </div>
-        <!-- Education Item 2 -->
-        <div class="education-item">
+      <div class="education-roadmap">
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fa fa-school"></i></div>
           <h3>Higher Secondary School</h3>
           <p>SBOA School and Junior College</p>
           <span>2019 - 2021</span>
           <p>Percentage: 96.67%</p>
         </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fa fa-graduation-cap"></i></div>
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <p>Vellore Institute of Technology</p>
+          <span>2021 - 2025</span>
+          <p>CGPA: 9.18</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+
+<!-- Contact -->
   <section id="contact" data-aos="fade-up">
     <div class="container">
       <h2>Contact Me</h2>
 
-      <form action="https://formspree.io/f/xjvnqnoe" method="post">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input name="Email" id="email" type="email" placeholder="Your Email" required>
-        <input type="text" name="subject" placeholder="Subject" required>
-        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Submit</button>
-      </form>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Let’s Connect</h3>
+          <p>If you'd like to collaborate, discuss opportunities, or just say hi — feel free to reach out!</p>
+          <div class="contact-links">
+            <a href="mailto:shreya.email@example.com">
+              <i class="fa fa-envelope" aria-hidden="true"></i> shreya.email@example.com
+            </a>
+            <a href="https://www.linkedin.com/in/shreya-venkatapathy/" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Shreya-0309" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub
+            </a>
+          </div>
+        </div>
+
+        <form id="contactForm" action="https://formspree.io/f/xjvnqnoe" method="post" class="contact-form">
+          <input id="name" type="text" name="name" placeholder="Your Name" required>
+          <input name="Email" id="email" type="email" placeholder="Your Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
     </div>
   </section>
 
+
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Shreya Venkat. All rights reserved.</p>
+    <div class="container footer-grid">
+      <div>&copy; 2025 Shreya Venkat. All rights reserved.</div>
+      <div class="footer-right">
+        <a href="https://github.com/Shreya-0309" target="_blank" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/shreya-venkatapathy/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="mailto:shreya.email@example.com" aria-label="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+      </div>
+    </div>
   </footer>
 
-  <!-- External Scripts -->
-  <!-- Particles.js Library -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <!-- Typed.js Library -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <!-- AOS JS for scroll animations -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-          integrity="sha512-GY9fB2Y81KztBMBtwxQiz7v/xvWXm6hfzTObom+XyyKM63dZ96BlYwQhsq59V6B0IirnVZBkI2ZCPe6zs2wXGw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- Custom JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="script.js"></script>
-  
-
 </body>
 </html>
